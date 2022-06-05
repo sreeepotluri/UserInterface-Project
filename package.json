@@ -1,6 +1,7 @@
 {
   "name": "userinterface-project",
   "version": "1.0.0",
+  "description": "USER INTERFACE-PROJECT",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js",
@@ -22,9 +23,5 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.16"
-  },
-  "description": "USER INTERFACE-PROJECT",
-  "keywords": [
-    "sreee"
-  ]
+  }
 }
