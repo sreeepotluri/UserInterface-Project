@@ -1,5 +1,6 @@
- WEB-PROGRAMMING-PROJECT
- 
+ USER INTERFACE-PROJECT
+ ![Screenshot (6) png](https://user-images.githubusercontent.com/103054142/172070764-7a35b182-9958-4947-8d6d-79b47b359068.png)
+
  INTRODUCTION:
   This project pertains to "SOCIAL MEDIA" site and it's title is "SOCIO FACTS" which is a social media app. This allows user to register and then login to the website and 
   post images, videos, send messages and follow other users and comment on their posts and pictures and videos. At first, user needs to  register by entering their details like firstname, lastname, emailid, username and password and then by entering the same username and password user logins to website.
@@ -25,3 +26,4 @@
   
   ERD DIAGRAM:
   
+![Screenshot (6) png](https://user-images.githubusercontent.com/103054142/172070777-3d16335a-5f90-43b5-bc10-53f49f0c7eb5.png)
