@@ -1,0 +1,65 @@
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: 500px;
+    color: lightsteelblue;
+
+
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: 200px;
+    color: lightsteelblue;
+    
+
+}
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: 200px;
+    color: burlywood;
+}
+input[type="button"] {
+ 
+    background-color:lightsteelblue;
+    color: white;
+    display: block;
+    margin: auto;
+    border-radius: auto;
+
+}
+input{
+    margin: 10px;
+    margin-left: 0px;
+    padding: 5px;
+    
+}
+form{
+    width: fit-content;
+    padding: 20px;
+    margin: 40px auto;
+    font-size: 20px;
+    border: 2px solid lightsteelblue;
+    border-radius: 10px;
+}
+background img{
+    height: auto;
+    width: auto;
+}
+body{
+    background: url("../SOCIO FACTS.jpg");
+    margin: auto;
+    padding: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: bottom;
+}
+h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: 200px;
+    color: burlywood;
+
+
+}
