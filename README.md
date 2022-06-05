@@ -8,3 +8,5 @@ INSTALLATIONS: Need to install NODEMON, HEROKU, MYSQL for this website. HEROKU C
 
 ENTITIES: Entities in this website are FOLLOWER, MESSAGES, POSTS and GROUPS. Each and every entity is associated with other and all are connected to one other and described graphically in ENTITY RELATIONSHIP DIAGRAM(ERD) in which others can view entities and their attributes and relationships between those entities.
 
+ERD DIAGRAM:
+
