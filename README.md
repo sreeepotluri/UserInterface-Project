@@ -10,3 +10,4 @@ ENTITIES: Entities in this website are FOLLOWER, MESSAGES, POSTS and GROUPS. Eac
 
 ERD DIAGRAM:
 
+"C:\Users\18483\OneDrive\Pictures\Screenshots\Screenshot (6).png.png"
