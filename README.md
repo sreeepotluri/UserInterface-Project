@@ -1,3 +1,5 @@
+[SOCIO FACTS ERD.pdf](https://github.com/sreeepotluri/UserInterface-Project/files/8885517/SOCIO.FACTS.ERD.pdf)
+[SOCIO FACTS ERD.pdf](https://github.com/sreeepotluri/UserInterface-Project/files/8885518/SOCIO.FACTS.ERD.pdf)
 USER INTERFACE-PROJECT
 
 INTRODUCTION: This project pertains to "SOCIAL MEDIA" site and it's title is "SOCIO FACTS" which is a social media app. This allows user to register and then login to the website and post images, videos, send messages and follow other users and comment on their posts and pictures and videos. At first, user needs to register by entering their details like firstname, lastname, emailid, username and password and then by entering the same username and password user logins to website. After loggingin, user can post images and videos. Another task is, user sends a follow request to other follower who has account over same website or app and other user accepts request. Eventually, both users are followers for each and sends messages to each and posts images, videos and comments on them and also can create groups just like Whatsapp, Facebbok, Instagram and Twitter.
@@ -11,3 +13,4 @@ ENTITIES: Entities in this website are USER ,MESSAGES, POSTS and GROUPS. Each an
 ERD DIAGRAM:
 
 ![SOCIO FACTS](https://user-images.githubusercontent.com/103054142/173225163-f31bbfc2-6dfe-427b-b358-e48bd88d2a64.png)
+[SOCIO FACTS ERD.pdf](https://github.com/sreeepotluri/UserInterface-Project/files/8885519/SOCIO.FACTS.ERD.pdf)
