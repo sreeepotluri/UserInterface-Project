@@ -10,4 +10,4 @@ ENTITIES: Entities in this website are USER ,MESSAGES, POSTS and GROUPS. Each an
 
 ERD DIAGRAM:
 
-![SOCIO FACTS](https://user-images.githubusercontent.com/103054142/173224943-56c2078a-0afe-4702-ba09-6ca82df5a330.png)
+![SOCIO FACTS](https://user-images.githubusercontent.com/103054142/173225163-f31bbfc2-6dfe-427b-b358-e48bd88d2a64.png)
