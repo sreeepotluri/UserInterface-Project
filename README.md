@@ -10,4 +10,4 @@ ENTITIES: Entities in this website are FOLLOWER(follower is also an user, so men
 
 ERD DIAGRAM:
 
-![Screenshot (6) png](https://user-images.githubusercontent.com/103054142/172073096-88349094-a110-4e5f-bb84-f6e5d94f2729.png)
+[SOCIO FACTS ERD.pdf](https://github.com/sreeepotluri/UserInterface-Project/files/8885486/SOCIO.FACTS.ERD.pdf)
