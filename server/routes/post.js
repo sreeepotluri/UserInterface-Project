@@ -5,10 +5,10 @@ const router = express.Router();
 
 // 2. create all routes to access database
 router
-  .post('/send', async (req, res) => {
+  .post('/create', async (req, res) => {
     try {
-      const message = await Message.send(req.body.messageId);
-      res.send({...message, messageId: undefined});
+      const post = await Post.create(req.body.postId);
+      res.send({...post, postId: undefined});
     } catch(error) {
       res.status(401).send({ message: error.message });
     }
@@ -16,8 +16,8 @@ router
 
   .post('/read', async (req, res) => {
     try {
-      const message = await Message.read(req.body.messageId);
-      res.send({...message, messageId: undefined});
+      const post = await Post.read(req.body.postId);
+      res.send({...post, postId: undefined});
     } catch(error) {
       res.status(401).send({ message: error.message }); 
     }
@@ -25,8 +25,8 @@ router
 
   .delete('/delete', async (req, res) => {
     try {
-      await messageId.deleteMessage(req.body.messageId);
-      res.send({ success: "Message deleted" });
+      await Post.delete(req.body.postId);
+      res.send({ success: "Post deleted" });
     } catch(error) {
       res.status(401).send({ message: error.message });
     }

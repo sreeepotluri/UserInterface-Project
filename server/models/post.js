@@ -32,11 +32,6 @@ async function readPost(postId) {
   return post;
 }
 
-// UPDATE POST
-async function updatePost(postId) {
-  const post = await post.updateOne({"_id": id}, {$set: { postId: postId}});
-  return post;
-}
 
 //DELETE POST
 async function deletePost(postId) {
@@ -45,5 +40,5 @@ async function deletePost(postId) {
 
 // 5. export all functions we want to access in route files
 module.exports = { 
-  updatePost, deletePost, createPost, readPost
+   deletePost, createPost, readPost
 };
