@@ -1,14 +1,14 @@
 // 1. import any needed libraries
 const express = require("express");
-const Post = require('../models/post'); //accesses functions in post model file
+const User = require('../models/post'); //accesses functions in post model file
 const router = express.Router();
 
 // 2. create all routes to access database
 router
-  .post('/create', async (req, res) => {
+  .post('/send', async (req, res) => {
     try {
-      const post = await User.create(req.body.postId);
-      res.send({...post, postId: undefined});
+      const message = await Message.send(req.body.messageId);
+      res.send({...message, messageId: undefined});
     } catch(error) {
       res.status(401).send({ message: error.message });
     }
@@ -16,26 +16,17 @@ router
 
   .post('/read', async (req, res) => {
     try {
-      const post = await Post.read(req.body.postId);
-      res.send({...post, postId: undefined});
+      const message = await Message.read(req.body.messageId);
+      res.send({...message, messageId: undefined});
     } catch(error) {
       res.status(401).send({ message: error.message }); 
     }
   })
 
-  .put('/update', async (req, res) => {
-    try {
-      const post = await Post.update(req.body.postId);
-      res.send({...post, postId: undefined});
-    } catch(error) {
-      res.status(401).send({ message: error.message });
-    }
-  })
-
   .delete('/delete', async (req, res) => {
     try {
-      await Post.delete(req.body.postId);
-      res.send({ success: "Post deleted" });
+      await messageId.deleteMessage(req.body.messageId);
+      res.send({ success: "Message deleted" });
     } catch(error) {
       res.status(401).send({ message: error.message });
     }
