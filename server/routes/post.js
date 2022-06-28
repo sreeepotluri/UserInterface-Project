@@ -7,8 +7,8 @@ const router = express.Router();
 router
   .post('/create', async (req, res) => {
     try {
-      const post = await Post.create(req.body.postId);
-      res.send({...post, postId: undefined});
+      const post = await Post.createPost(req.body.postId);
+      res.send({...post});
     } catch(error) {
       res.status(401).send({ message: error.message });
     }
@@ -16,16 +16,25 @@ router
 
   .post('/read', async (req, res) => {
     try {
-      const post = await Post.read(req.body.postId);
-      res.send({...post, postId: undefined});
+      const post = await Post.readPost(req.body.postId);
+      res.send({...post});
     } catch(error) {
       res.status(401).send({ message: error.message }); 
     }
   })
 
-  .delete('/delete', async (req, res) => {
+  .post('/update', async (req, res) => {
     try {
-      await Post.delete(req.body.postId);
+      const post = await Post.updatePost(req.body.postId);
+      res.send({...post});
+    } catch(error) {
+      res.status(401).send({ message: error.message });
+    }
+  })
+
+  .post('/delete', async (req, res) => {
+    try {
+      await Post.deletePost(req.body.postId);
       res.send({ success: "Post deleted" });
     } catch(error) {
       res.status(401).send({ message: error.message });

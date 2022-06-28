@@ -4,6 +4,9 @@ const app = express();
 const mongoose = require("mongoose");
 const path = require('path');
 
+const userRoutes = require('./server/routes/user');
+app.use('/user', userRoutes);
+
 mongoose.connect(process.env.dbURL)
  .then(console.log("DB Connected!!"))
  .catch(error => console.log(error));

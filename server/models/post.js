@@ -15,7 +15,7 @@ async function createPost(postId) {
   const post = await getPost(postId);
   if(post) throw Error('post already created');
 
-  const newPost = await Post.create({
+  const newPost = await Post.createPost({
     
     postId: postId
   });
@@ -29,6 +29,14 @@ async function readPost(postId) {
   if(!post) throw Error('Post not found');
   if(user.postId != postId) throw Error('Wrong Post created');
 
+  return post;
+}
+
+// UPDATE A POST
+async function updatePost(postId) {
+  const post = await getPost(postId);
+  if(!post) throw Error('post updated already');
+  if(user.postId != postId) throw Error('post updated with issues');
   return post;
 }
 
