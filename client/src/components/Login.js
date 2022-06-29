@@ -27,7 +27,7 @@ const Login = () => {
     .then((data) => {
       if(!data.message) {
         console.log(data)
-        navigate("/books")
+        navigate("/brands")
       }
     })  
     .catch((error) => {
