@@ -1,5 +1,6 @@
 import './App.css';
-import Brands from './components/Brands.js';
+import Brands from "./components/Brands.js";
+import Regarding from "./components/Regarding.js";
 
 const brands = [
   {
@@ -19,6 +20,8 @@ const brands = [
 function App() {
   return (
     <div className="App">
+      <Regarding />
+
       <h1>Brand Application</h1>
       <Brands brands={brands}/>
     </div>
