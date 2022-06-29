@@ -2,8 +2,8 @@ import './App.css';
 import Brands from "./components/Brands.js";
 import Regarding from "./components/Regarding.js";
 import Navbar from "./components/Navbar.js";
-import Registerform from "./components/Register.js";
-import Loginform from "./components/Login.js";
+import Register from "./components/Register.js";
+import Login from "./components/Login.js";
 
 const brands = [
   {
@@ -25,6 +25,9 @@ function App() {
     <div className="App">
       <Navbar />
       <Regarding />
+      <Brands />
+      <Register />
+      <Login />
 
       <h1>Brand Application</h1>
       <Brands brands={brands}/>
