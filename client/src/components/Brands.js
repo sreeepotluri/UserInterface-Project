@@ -1,25 +1,15 @@
-const brands = [
-    {
-        id: 123,
-        title: "Adidas"
-    },
-    {
-        id: 456,
-        title: "puma"
-    },
-    {
-        id: 789,
-        title: "Reebok"
-    }
-]
+const user = {
+    id: 5555,
+    username: "sreeepotluri"
+}
 
-function Brands() {
+const Brands = (props) => {
     return (
         <div>
-            <h2>Preferred Brands</h2>
+            <h2> {user.username}'s Preferred Brands</h2>
             <ul>
                 {
-                   brands.map((brand) => 
+                   props.brands.map((brand) => 
                    <li key={brand.id}> {brand.title} </li>
                    )
                 }
