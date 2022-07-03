@@ -1,9 +1,10 @@
-import './App.css';
-import Brands from "./components/Brands.js";
-import Regarding from "./components/Regarding.js";
-import Navbar from "./components/Navbar.js";
-import Register from "./components/Register.js";
-import Login from "./components/Login.js";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./App.css";
+import Brands from "./components/pages/Brands.js";
+import Regarding from "./components/pages/Regarding.js";
+import Navbar from "./components/pages/Navbar.js";
+import Register from "./components/pages/Register.js";
+import Login from "./components/pages/Login.js";
 
 const brands = [
   {
