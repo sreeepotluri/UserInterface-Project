@@ -1,39 +1,44 @@
+import { Outlet, Link } from "react-router.dom";
+
 const Navbar = () => {
     return (
   <div>
    <nav class="navbar navbar-expand-lg bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Brand Application</a>
+    <Link className="navbar-brand" href="#">Brand Application</Link>
     
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
+    <div className="collapse navbar-collapse" id="navbarNav">
+      <ul className="navbar-nav">
 
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        <li className="nav-item">
+          <Link class="nav-link" href="#">Profile</Link>
         </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="#">Profile</a>
+        <li className="nav-item">
+          <Link className="nav-link" href="#">Register</Link>
         </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="#">Register</a>
+        <li className="nav-item">
+          <Link className="nav-link" href="#">Login</Link>
         </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="#">Login</a>
+        <li className="nav-item">
+          <Link className="nav-link" href="#">Brands</Link>
         </li>
 
+        <li className="nav-item">
+          <Link className="nav-link" href="#">Regarding Application</Link>
+        </li>
       </ul>
-
     </div>
+   </div>
+  </nav>  
 
-  </div>
-</nav>  
+  <Outlet />
 
   </div>
  );
