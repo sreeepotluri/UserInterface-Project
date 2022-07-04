@@ -6,7 +6,7 @@ const Register = () => {
 const navigate = useNavigate();
 
   const [user, setUser] = useState({
-    username: '', //sreeepotluri
+    username: '', 
     password: '',
     password2: ''
   });
