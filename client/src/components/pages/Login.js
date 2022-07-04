@@ -40,7 +40,7 @@ const Login = () => {
     <div>
       <form onSubmit={onSubmit}>
         <div className="mb-3">
-          <label htmlFor="username" className="form-label">Username</label>
+          <label htmlFor="username" className="form-label">Enter Username</label>
           <input 
             type="text" 
             className="form-control" 
@@ -52,7 +52,7 @@ const Login = () => {
           />
         </div>
         <div className="mb-3">
-          <label htmlFor="password" className="form-label">Password</label>
+          <label htmlFor="password" className="form-label">Enter Password</label>
           <input 
             type="password" 
             className="form-control" 
@@ -64,7 +64,7 @@ const Login = () => {
           />
         </div>
         <div className="mb-3">
-          <label htmlFor="password2" className="form-label">Confirm Password</label>
+          <label htmlFor="password2" className="form-label">Re-Enter Password</label>
           <input 
             type="password" 
             className="form-control" 

@@ -23,7 +23,7 @@ const Regarding = () => {
            Windows PowerShell
            </div>
 
-           <button className = "mt-5 btn-danger">Sell More</button>
+           <button className = "mt-5 btn-danger">View More Products </button>
 
          </div>
 
