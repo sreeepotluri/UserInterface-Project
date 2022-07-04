@@ -13,7 +13,7 @@ const navigate = useNavigate();
 
   const {username, password, password2} = user;  
 
-  const onChange = (e) => setUser({...user, [e.target.name]: e.target.value})
+  const onChange = (e) => setUser({...user, [e.target.name]: e.target.value});
 
   const onSubmit = (e) => {
     e.preventDefault();
@@ -27,7 +27,6 @@ const navigate = useNavigate();
     .then((data) => {
       if(!data.message) {
         console.log(data)
-        navigate("/brands")
       }
     })  
     .catch((error) => {
