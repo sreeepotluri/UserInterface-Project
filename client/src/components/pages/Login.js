@@ -63,18 +63,6 @@ const Login = () => {
             required
           />
         </div>
-        <div className="mb-3">
-          <label htmlFor="password2" className="form-label">Re-Enter Password</label>
-          <input 
-            type="password" 
-            className="form-control" 
-            id="password2"
-            name='password2'
-            onChange={onChange}
-            value={password2}
-            required
-          />
-        </div>
         <input type="submit" className="btn btn-primary" value="Login"/>
       </form>
     </div>

@@ -38,30 +38,6 @@ const navigate = useNavigate();
   return(
     <div>
       <form onSubmit={onSubmit}>
-      <div className="mb-3">
-          <label htmlFor="first name" className="form-label">Enter First Name</label>
-          <input 
-            type="text" 
-            className="form-control" 
-            id="first name"
-            name='first name'
-            onChange={onChange}
-            value={username}
-            required
-          />
-        </div>
-        <div className="mb-3">
-          <label htmlFor="lastname" className="form-label">Enter Last Name</label>
-          <input 
-            type="text" 
-            className="form-control" 
-            id="Last Name"
-            name='Last Name'
-            onChange={onChange}
-            value={username}
-            required
-          />
-        </div>
         <div className="mb-3">
           <label htmlFor="username" className="form-label">Enter Username</label>
           <input 
