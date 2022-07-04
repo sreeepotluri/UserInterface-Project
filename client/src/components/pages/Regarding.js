@@ -6,21 +6,27 @@ const Regarding = () => {
           <div className="container">
           <hr />
 
-          <h2 className="text-center">FEW FACTS...</h2>
+          <h2 className="text-center">FEW FACTS REGARDING BRANDS...</h2>
           <hr />
 
           <div className="row text-primary">
 
           <div className="col-md">
-           Windows PowerShell
+          Adidas AG is a German multinational corporation, founded and headquartered in Herzogenaurach, 
+          Bavaria, that designs and manufactures shoes, clothing and accessories.
+          It is the largest sportswear manufacturer in Europe, and the second largest in the world, after Nike.
           </div>
 
           <div className="col-md">
-           Windows PowerShell
+          Adidas AG is a German multinational corporation, founded and headquartered in Herzogenaurach, 
+          Bavaria, that designs and manufactures shoes, clothing and accessories. 
+          It is the largest sportswear manufacturer in Europe, and the second largest in the world, after Nike.
            </div>
 
            <div className="col-md">
-           Windows PowerShell
+           Adidas AG is a German multinational corporation, founded and headquartered in Herzogenaurach,
+           Bavaria, that designs and manufactures shoes, clothing and accessories.
+           It is the largest sportswear manufacturer in Europe, and the second largest in the world, after Nike.
            </div>
 
            <button className = "mt-5 btn-danger">View More Products </button>
@@ -29,15 +35,19 @@ const Regarding = () => {
 
          <hr />
 
-         <h2 className="text-center"> FEW MORE FACTS...</h2>
+         <h2 className="text-center"> FEW MORE FACTS REGARDING BRANDS...</h2>
          <hr />
          <div className="row">
             <div className="col-md bg-warning p-5">
-             Windows Powershell
+            Adidas AG is a German multinational corporation, founded and headquartered in Herzogenaurach,
+            Bavaria, that designs and manufactures shoes, clothing and accessories. 
+            It is the largest sportswear manufacturer in Europe, and the second largest in the world, after Nike.
            </div>
 
            <div className="col-md">
-           Windows Powershell
+           Adidas AG is a German multinational corporation, founded and headquartered in Herzogenaurach,
+           Bavaria, that designs and manufactures shoes, clothing and accessories. 
+           It is the largest sportswear manufacturer in Europe, and the second largest in the world, after Nike.
            </div>
 
             </div>

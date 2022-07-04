@@ -8,7 +8,6 @@ const Login = () => {
   const [user, setUser] = useState({
     username: '', //sreeepotluri
     password: '',
-    password2: ''
   });
 
   const {username, password, password2} = user;  
