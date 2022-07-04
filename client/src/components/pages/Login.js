@@ -6,8 +6,8 @@ const Login = () => {
   const navigate = useNavigate();
 
   const [user, setUser] = useState({
-    username: '', //sreeepotluri
-    password: '',
+    username: '',
+    password: ''
   });
 
   const {username, password, password2} = user;  
@@ -26,7 +26,6 @@ const Login = () => {
     .then((data) => {
       if(!data.message) {
         console.log(data)
-        navigate("/brands")
       }
     })  
     .catch((error) => {
