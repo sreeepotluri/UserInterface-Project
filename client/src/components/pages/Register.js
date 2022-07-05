@@ -6,12 +6,13 @@ const Register = () => {
 const navigate = useNavigate();
 
   const [user, setUser] = useState({
+    fullname: '', //potluripavansreenivas
     username: '',  //sreeepotluri
     password: '', //pancakes
     password2: '' //icecreams
   });
 
-  const {username, password, password2} = user;  
+  const {fullname,username, password, password2} = user;  
 
   const onChange = (e) => setUser({...user, [e.target.name]: e.target.value});
 
@@ -20,6 +21,7 @@ const navigate = useNavigate();
 
     fetchData("/user/register", 
       {
+       fullname: //pavan sreenivas potluri
        username, //sreeepotluri
        password, //pancakes
        password2  //icecreams
@@ -48,7 +50,7 @@ const navigate = useNavigate();
             id="fullname"
             name='fullname'
             onChange={onChange}
-            value={username}
+            value={fullname}
             required
           />
         </div>
