@@ -26,7 +26,8 @@ const navigate = useNavigate();
       "POST")
     .then((data) => {
       if(!data.message) {
-        console.log(data)
+        console.log(data);
+        navigate("/brands");
       }
     })  
     .catch((error) => {
