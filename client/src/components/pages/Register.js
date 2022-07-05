@@ -28,6 +28,7 @@ const navigate = useNavigate();
     .then((data) => {
       if(!data.message) {
         navigate("/brands");
+        console.log(data)
       }
     })  
     .catch((error) => {
