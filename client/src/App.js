@@ -5,6 +5,7 @@ import Regarding from "./components/pages/Regarding.js";
 import Navbar from "./components/pages/Navbar.js";
 import Register from "./components/pages/Register.js";
 import Login from "./components/pages/Login.js";
+import Profile from "./components/pages/Profile.js"
 
 const brands = [
   {
@@ -31,6 +32,7 @@ function App() {
            <Route path ="brands" element={<Brands brands={brands}/>} />
            <Route path="register" element={<Register />} />
            <Route path="login" element={<Login />} />
+           <Route path="profile" element={<Profile />} />
 
       </Route>
      </Routes>
