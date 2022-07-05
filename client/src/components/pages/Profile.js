@@ -5,30 +5,27 @@ const Profile = () => {
 
     const navigate = useNavigate();
 
-    const [brand, setBrand] = useState({
-      bd:''
+    const [textbrand, settextBrand] = useState({
+      brand:''
     });
-    const {bd} = brand;  
+    const {brand} = textbrand;  
 
-    const onChange = (e) => setBrand({...brand, [e.target.name]: e.target.value})
+    const onChange = (e) => settextBrand({...textbrand, [e.target.name]: e.target.value})
   
-    const onSubmit = (e) => {
-      e.preventDefault();
-
-      console.log(brand)
+  
   
     return (
-        <form onSubmit={onSubmit}>
-        <div id="root">
+        <form>
+        <div>
           <label>
-            Brand
-            <input type="text" name="bd" id="bd" onChange={onChange} placeholder="Enter Brand Value" value = {bd} />
+            Create Brand Value:
+            <input type="text" name="brand" id="brand" onChange={onChange} placeholder="Enter Brand Value" value = {brand} />
           </label>
           <input type="submit" value="Submit" />
           </div>
         </form>
       );
     }
-}
+
 
   export default Profile;
