@@ -7,7 +7,7 @@ const Brands = (props) => {
 
 return (
  <div>
-  <h2 className="text-center"> {user.username}'s Preferred Brands</h2>
+ <h2 className="text-center"> {user.username}'s Preferred Brands</h2>
   <ul>
    {
      props.brands.map((brand) => 
