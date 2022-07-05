@@ -4,27 +4,25 @@ import { useNavigate } from "react-router-dom";
 
 const Profile = () => {
 
-    const navigate = useNavigate();
+const navigate = useNavigate();
 
-    const [textbrand, settextBrand] = useState({
+  const [brandvalue, setbrandValue] = useState({
       brand:''
-    });
-    const {brand} = textbrand;  
+    }); 
+  const {brand} = brandvalue;  
 
-    const onChange = (e) => settextBrand({...textbrand, [e.target.name]: e.target.value})
+  const onChange = (e) => setbrandValue({...brandvalue, [e.target.name]: e.target.value})
   
-  
-  
-    return (
+   return (
         <form1>
-        <div>
+        <div> 
           <label>
-            Create Brand Value:
+            Create Brand Value: 
             <input type="text" name="brand" id="brand" onChange={onChange} placeholder="Enter Brand Value" value = {brand} />
-          </label>
+          </label> 
           <input type="submit" className="btn btn-primary" value="Submit" />
           </div>
-        </form1>
+        </form1> // Create a Brand Value Is just Like Create A Post
       );
     }
 
