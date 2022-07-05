@@ -18,6 +18,7 @@ const navigate = useNavigate();
         <div> 
           <label>
             Create Brand Value: 
+            <br></br>
             <input type="text" name="brand" id="brand" onChange={onChange} placeholder="Enter Brand Value" value = {brand} />
           </label> 
           <input type="submit" className="btn btn-primary" value="Submit" />
