@@ -21,7 +21,7 @@ const navigate = useNavigate();
     fetchData("/user/register", 
       {
        username, //sreeepotluri
-       password1, //pancakes
+       password, //pancakes
        password2  //icecreams
       }, 
       "POST")
@@ -40,12 +40,12 @@ const navigate = useNavigate();
     <div>
       <form onSubmit={onSubmit}>
         <div className="mb-3">
-          <label htmlFor="username" className="form-label">Type Full Name</label>
+          <label htmlFor="fullname" className="form-label">Type Full Name</label>
           <input 
             type="text" 
             className="form-control" 
-            id="username"
-            name='firstname'
+            id="fullname"
+            name='fullname'
             onChange={onChange}
             value={username}
             required
