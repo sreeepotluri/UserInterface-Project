@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
+
 const Profile = () => {
 
     const navigate = useNavigate();
@@ -15,7 +16,7 @@ const Profile = () => {
   
   
     return (
-        <form>
+        <form1>
         <div>
           <label>
             Create Brand Value:
@@ -23,7 +24,7 @@ const Profile = () => {
           </label>
           <input type="submit" value="Submit" />
           </div>
-        </form>
+        </form1>
       );
     }
 

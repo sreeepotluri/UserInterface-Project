@@ -32,6 +32,15 @@ form{
   border-radius: 10px;
 }
 
+form1{
+  width: fit-content;
+  padding: 50px;
+  margin: 50px auto;
+  font-size: 40px;
+  border: 4px solid lightsteelblue;
+  border-radius: 50px;
+}
+
 .App {
   text-align: center;
 }
