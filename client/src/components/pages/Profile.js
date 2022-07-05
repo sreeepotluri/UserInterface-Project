@@ -1,22 +1,34 @@
-const user = {
-    id: 5555,
-    username: "sreeepotluri"
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
+const Profile = () => {
+
+    const navigate = useNavigate();
+
+    const [brand, setBrand] = useState({
+      bd:''
+    });
+    const {bd} = brand;  
+
+    const onChange = (e) => setBrand({...brand, [e.target.name]: e.target.value})
+  
+    const onSubmit = (e) => {
+      e.preventDefault();
+
+      console.log(brand)
+  
+    return (
+        <form onSubmit={onSubmit}>
+        <div id="root">
+          <label>
+            Sport:
+            <input type="text" name="bd" id="bd" onChange={onChange} placeholder="Enter Brand Value" value = {bd} />
+          </label>
+          <input type="submit" value="Submit" />
+          </div>
+        </form>
+      );
+    }
 }
 
-const Brands = (props) => {
-
-return (
- <div>
- <h2 className="text-center"> {user.username}'s Preferred Brands</h2>
-  <ul>
-   {
-     props.brands.map((brand) => 
-      <li key={brand.id}> {brand.title} </li>
-       )
-   }
-        </ul>
-    </div>
- );
-}
-
-export default Brands;
+  export default Profile;
