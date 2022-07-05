@@ -6,13 +6,14 @@ const Register = () => {
 const navigate = useNavigate();
 
   const [user, setUser] = useState({
-    fullname: '', //potluripavansreenivas
+    firstname: '', //pavansreenivas
+    lastname:  '', //potluri
     username: '',  //sreeepotluri
     password: '', //pancakes
     password2: '' //icecreams
   });
 
-  const {fullname,username, password, password2} = user;  
+  const {firstname, lastname, username, password, password2} = user;  
 
   const onChange = (e) => setUser({...user, [e.target.name]: e.target.value});
 
@@ -21,7 +22,8 @@ const navigate = useNavigate();
 
     fetchData("/user/register", 
       {
-       fullname: //pavan sreenivas potluri
+       firstname: //pavan sreenivas 
+       lastname, //potluri
        username, //sreeepotluri
        password, //pancakes
        password2  //icecreams
@@ -43,17 +45,30 @@ const navigate = useNavigate();
     <div>
       <form onSubmit={onSubmit}>
         <div className="mb-3">
-          <label htmlFor="fullname" className="form-label">Type Full Name</label>
+          <label htmlFor="firstname" className="form-label">Type First Name</label>
           <input 
             type="text" 
             className="form-control" 
-            id="fullname"
-            name='fullname'
+            id="firstname"
+            name='firstname'
             onChange={onChange}
-            value={fullname}
+            value={firstname}
             required
           />
         </div>
+        <div className="mb-3">
+          <label htmlFor="lastname" className="form-label">Type Last Name</label>
+          <input 
+            type="text" 
+            className="form-control" 
+            id="lastname"
+            name='lastname'
+            onChange={onChange}
+            value={lastname}
+            required
+          />
+        </div>
+
         <div className="mb-3">
           <label htmlFor="username" className="form-label">Type Username</label>
           <input 
