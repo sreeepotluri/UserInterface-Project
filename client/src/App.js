@@ -27,10 +27,11 @@ function App() {
     <BrowserRouter>
      <Routes>
       <Route path='/' element={<Navbar />} >
-           <Route index element={<Regarding />} />
+           <Route index element={<Regarding/>} />
            <Route path ="brands" element={<Brands brands={brands}/>} />
            <Route path="register" element={<Register />} />
            <Route path="login" element={<Login />} />
+
       </Route>
      </Routes>
     </BrowserRouter>
