@@ -20,13 +20,13 @@ const navigate = useNavigate();
 
     fetchData("/user/register", 
       {
-       username,
-       password
+       username, //sreeepotluri
+       password1, //pancakes
+       password2  //icecreams
       }, 
       "POST")
     .then((data) => {
       if(!data.message) {
-        console.log(data);
         navigate("/brands");
       }
     })  
@@ -40,7 +40,7 @@ const navigate = useNavigate();
     <div>
       <form onSubmit={onSubmit}>
         <div className="mb-3">
-          <label htmlFor="username" className="form-label">Enter First Name</label>
+          <label htmlFor="username" className="form-label">Type Full Name</label>
           <input 
             type="text" 
             className="form-control" 
@@ -52,19 +52,7 @@ const navigate = useNavigate();
           />
         </div>
         <div className="mb-3">
-          <label htmlFor="username" className="form-label">Enter Last Name</label>
-          <input 
-            type="text" 
-            className="form-control" 
-            id="username"
-            name='lastname'
-            onChange={onChange}
-            value={username}
-            required
-          />
-        </div>
-        <div className="mb-3">
-          <label htmlFor="username" className="form-label">Enter Username</label>
+          <label htmlFor="username" className="form-label">Type Username</label>
           <input 
             type="text" 
             className="form-control" 
@@ -76,7 +64,7 @@ const navigate = useNavigate();
           />
         </div>
         <div className="mb-3">
-          <label htmlFor="password" className="form-label">Enter Password</label>
+          <label htmlFor="password" className="form-label">Type Password</label>
           <input 
             type="password" 
             className="form-control" 
@@ -88,7 +76,7 @@ const navigate = useNavigate();
           />
         </div>
         <div className="mb-3">
-          <label htmlFor="password2" className="form-label">Re-Enter Password</label>
+          <label htmlFor="password2" className="form-label">Confirm  Password</label>
           <input 
             type="password" 
             className="form-control" 
