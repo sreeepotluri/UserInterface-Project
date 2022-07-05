@@ -18,10 +18,12 @@ const Login = () => {
   const onSubmit = (e) => {
     e.preventDefault();
 
+    console.log(user)
+
     fetchData("/user/login", 
       {
        username, //sreeepotluri
-       password1, //pancakes
+       password, //pancakes
        password2 //icecreams
       }, 
       "POST")
@@ -64,14 +66,14 @@ const Login = () => {
           />
         </div>
         <div className="mb-3">
-          <label htmlFor="password" className="form-label">confirm password</label>
+          <label htmlFor="password2" className="form-label">confirm password</label>
           <input 
             type="password" 
             className="form-control" 
-            id="password"
-            name='password'
+            id="password2"
+            name='password2'
             onChange={onChange}
-            value={password}
+            value={password2}
             required
           />
         </div>

@@ -20,6 +20,8 @@ const navigate = useNavigate();
   const onSubmit = (e) => {
     e.preventDefault();
 
+    console.log(user)
+
     fetchData("/user/register", 
       {
        firstname: //pavan sreenivas 
