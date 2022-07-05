@@ -28,17 +28,16 @@ form{
   padding: 20px;
   margin: 40px auto;
   font-size: 20px;
-  border: 2px solid lightsteelblue;
+  border: 2px solid blue;
   border-radius: 10px;
 }
 
 form1{
   width: fit-content;
-  padding: 50px;
-  margin: 50px auto;
-  font-size: 40px;
-  border: 4px solid lightsteelblue;
-  border-radius: 50px;
+  padding: 20px;
+  margin: 40px auto;
+  font-size: 20px;
+  border-radius: 10px;
 }
 
 .App {

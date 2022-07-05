@@ -22,7 +22,7 @@ const Profile = () => {
             Create Brand Value:
             <input type="text" name="brand" id="brand" onChange={onChange} placeholder="Enter Brand Value" value = {brand} />
           </label>
-          <input type="submit" value="Submit" />
+          <input type="submit" className="btn btn-primary" value="Submit" />
           </div>
         </form1>
       );
