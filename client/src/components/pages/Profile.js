@@ -21,7 +21,7 @@ const Profile = () => {
         <form onSubmit={onSubmit}>
         <div id="root">
           <label>
-            Sport:
+            Brand
             <input type="text" name="bd" id="bd" onChange={onChange} placeholder="Enter Brand Value" value = {bd} />
           </label>
           <input type="submit" value="Submit" />
