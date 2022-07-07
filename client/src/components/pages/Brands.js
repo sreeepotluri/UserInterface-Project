@@ -5,6 +5,8 @@ const user = {
 
 const Brands = (props) => {
 
+  const { user } = useContext(UserContext);
+
 return (
  <div>
   <h2 className="text-center"> {user.username}'s Preferred Brands</h2>

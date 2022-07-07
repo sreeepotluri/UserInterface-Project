@@ -1,21 +1,17 @@
 import { fetchData } from "../../main.js";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useContext } from "react";
+import UserContext from "../../context/userContext.js";
 
 const Register = () => {
 const navigate = useNavigate();
 
-  const [user, setUser] = useState({
-    firstname: '', //pavansreenivas
-    lastname:  '', //potluri
-    username: '',  //sreeepotluri
-    password: '', //pancakes
-    password2: '' //icecreams
-  });
-
+  const {user, updateUser} = useContext(UserContext);
+    
   const {firstname, lastname, username, password, password2} = user;  
 
-  const onChange = (e) => setUser({...user, [e.target.name]: e.target.value});
+  const onChange = (e) => updateUser( e.target.name, e.target.value );
 
   const onSubmit = (e) => {
     e.preventDefault();

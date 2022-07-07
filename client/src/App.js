@@ -1,5 +1,6 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { UserProvider } from './context/userContext';
 import Brands from "./components/pages/Brands.js";
 import Regarding from "./components/pages/Regarding.js";
 import Navbar from "./components/pages/Navbar.js";
@@ -25,6 +26,7 @@ const brands = [
 function App() {
   return (
     <div className="App">
+    <UserProvider>
     <BrowserRouter>
      <Routes>
       <Route path='/' element={<Navbar />} >
@@ -37,6 +39,7 @@ function App() {
       </Route>
      </Routes>
     </BrowserRouter>
+    </UserProvider>
     </div>
   );
 }
