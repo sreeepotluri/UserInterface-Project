@@ -10,7 +10,7 @@ const Brands = (props) => {
 return (
  <div>
   <h2 className="text-center"> {user.username}'s Preferred Brands</h2>
-  <ul>
+  <ul id="brandlist">
    {
      props.brands.map((brand) => 
       <li key={brand.id}> {brand.title} </li>

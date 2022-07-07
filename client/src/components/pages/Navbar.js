@@ -1,6 +1,6 @@
 import { Outlet, Link } from "react-router-dom";
 import UserContext from "../../context/userContext";
-import { useContext, Fragment, useTransition} from "react";
+import { useContext, Fragment} from "react";
 
 const Navbar = () => {
    
@@ -8,14 +8,14 @@ const Navbar = () => {
 
    const authenticated = (
     <Fragment>
-      <h2>Hi, {user.username}! </h2>
+      <h2>Hello Everyone, {user.username}! </h2>
     </Fragment>
    );
 
    const guest = (
     <Fragment>
       <h2>
-        WELCOME
+        Welcome To United States Of America
       </h2>
     </Fragment>
    );
